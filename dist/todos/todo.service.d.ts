@@ -1,5 +1,5 @@
 import { Repository } from 'typeorm';
-import { Todo } from '../entities/todo.entity';
+import { Todo } from './todo.entity';
 export declare class TodoService {
     private todoRepository;
     constructor(todoRepository: Repository<Todo>);

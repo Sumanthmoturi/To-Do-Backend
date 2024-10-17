@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const todo_module_1 = require("./todos/todo.module");
 const users_module_1 = require("./users/users.module");
-const todo_entity_1 = require("./entities/todo.entity");
+const todo_entity_1 = require("./todos/todo.entity");
 const user_entity_1 = require("./users/user.entity");
 let AppModule = class AppModule {
 };
@@ -23,9 +23,9 @@ exports.AppModule = AppModule = __decorate([
                 type: 'postgres',
                 host: 'localhost',
                 port: 5432,
-                username: 'your_username',
-                password: 'your_password',
-                database: 'todo_db',
+                username: 'postgres',
+                password: 'new_password',
+                database: 'postgres',
                 autoLoadEntities: true,
                 synchronize: true,
                 entities: [user_entity_1.User, todo_entity_1.Todo],

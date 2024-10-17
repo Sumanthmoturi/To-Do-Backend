@@ -1,6 +1,6 @@
 // users/user.entity.ts
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
-import { Todo } from '../entities/todo.entity'; // Adjust the path as needed
+import { Todo } from '../todos/todo.entity'; // Adjust the path as needed
 
 @Entity()
 export class User {

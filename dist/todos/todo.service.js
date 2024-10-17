@@ -16,7 +16,7 @@ exports.TodoService = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
-const todo_entity_1 = require("../entities/todo.entity");
+const todo_entity_1 = require("./todo.entity");
 let TodoService = class TodoService {
     constructor(todoRepository) {
         this.todoRepository = todoRepository;

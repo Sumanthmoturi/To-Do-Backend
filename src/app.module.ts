@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TodosModule } from './todos/todo.module'; // Check this path
 import { UsersModule } from './users/users.module'; // Check this path
-import { Todo } from './entities/todo.entity';
+import { Todo } from './todos/todo.entity';
 import { User } from './users/user.entity';
 
 @Module({
@@ -11,9 +11,9 @@ import { User } from './users/user.entity';
       type: 'postgres',
       host: 'localhost',
       port: 5432,
-      username: 'your_username',
-      password: 'your_password',
-      database: 'todo_db',
+      username: 'postgres',
+      password: 'new_password',
+      database: 'postgres',
       autoLoadEntities: true,
       synchronize: true,
       entities:[User,Todo],
